@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1698747125 source:c:\ben\kodlar ve git\githuba a yüklenmeyen\projeler\c_prolab1_sondaj\alan_3_deneme\main.c
+	<stdio.h>
+	<ctype.h>
+	<stdlib.h>
+

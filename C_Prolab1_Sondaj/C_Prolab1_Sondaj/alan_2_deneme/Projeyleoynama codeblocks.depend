@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1697702101 source:c:\users\fsagl\onedrive\masaüstü\projeyleoynama codeblocks\main.c
+	<stdio.h>
+	<ctype.h>
+	<stdlib.h>
+

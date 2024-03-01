@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1698406371 source:c:\users\fsagl\onedrive\masaüstü\cuma\main.c
+	<stdio.h>
+	<ctype.h>
+	<stdlib.h>
+	<math.h>
+

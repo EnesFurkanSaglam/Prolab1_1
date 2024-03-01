@@ -1,0 +1,29 @@
+# Project: Test Winbgim
+# Makefile created by Dev-C++ 4.9.9.1
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = 
+OBJ  = "Test\ Winbgim.o" $(RES)
+LINKOBJ  = "Test Winbgim.o" $(RES)
+LIBS =  -L"C:/Users/Jaam/Desktop/FunProg/Dev-Cpp/lib" -lbgi -lgdi32 -luser32 
+INCS =  -I"C:/Users/Jaam/Desktop/FunProg/Dev-Cpp/include" 
+CXXINCS =  -I"C:/Users/Jaam/Desktop/FunProg/Dev-Cpp/include/c++/3.3.1"  -I"C:/Users/Jaam/Desktop/FunProg/Dev-Cpp/include/c++/3.3.1/mingw32"  -I"C:/Users/Jaam/Desktop/FunProg/Dev-Cpp/include/c++/3.3.1/backward"  -I"C:/Users/Jaam/Desktop/FunProg/Dev-Cpp/lib/gcc-lib/mingw32/3.3.1/include"  -I"C:/Users/Jaam/Desktop/FunProg/Dev-Cpp/include" 
+BIN  = "Test Winbgim.exe"
+CXXFLAGS = $(CXXINCS)   -fshort-double
+CFLAGS = $(INCS)   -fshort-double
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before "Test Winbgim.exe" all-after
+
+
+clean: clean-custom
+	rm -f $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o "Test Winbgim.exe" $(LIBS)
+
+"Test\ Winbgim.o": Test\ Winbgim.cpp
+	$(CPP) -c "Test Winbgim.cpp" -o "Test Winbgim.o" $(CXXFLAGS)

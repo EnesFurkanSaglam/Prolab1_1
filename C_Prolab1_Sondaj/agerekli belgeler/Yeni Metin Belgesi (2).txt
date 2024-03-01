@@ -1,0 +1,9 @@
+1___Aşama1
+
+1_Linkten kordinatlar alınacak
+2_Linkteki kordinatlar girilen satır değerine göre alınacak
+3_Kordinatlara göre resim çizilecek
+4_Şekillerin alanı hesaplanacak
+
+Not_
+--kordinat orjini sol üst köşe olacak y aşşağı x sağa gittikçe artacak

@@ -1,0 +1,87 @@
+Bu belge, Kocaeli Üniversitesi bilgisayar mühendisliği bölümü proglamlama labaratuvarı dersi 1.proje ödevi için hazırlanmıştır. 
+
+Anahtar Kelimeler — doküman biçimi; stil; anahtar kelimeler. (*key words) 
+
+
+1.özet
+
+Bu projede c proglamlama dili kullanılarak verilen bilgilere göre web sitesinden veri çekilerek bir bölgedeki sondaj maliyeti karı zararı belli bir kural dizimine göre hesaplanarak kullanıcıya istendiği şekilde çıktı vermek için yapılmıştır.  
+
+
+2.giriş
+
+
+Bu proje, C proglamalama dilinde web'den veri çekme girilen kordinatlara göre grafik ve şekil çizme belli bir matematiksel hesaba göre şekilin veya şekillerin alanını bulmak herhabgş bir dosyadan veriyi alıp kullanmak belli bir örüntü kullanılarak arkaplan oluşturmak  verilen kurallara göre min maliyet max karar olacak şekilde şekli bölümlendirmek amacıyla yapılmıştır.
+
+
+
+3.Yöntem
+
+	ilk olarak curl kütüphanesi kullanarak cmd üzerinden ................komutuyla txt dosyasına web sitesinde bulunan veriyi aktardık
+	grafik arayüznün açılması için
+
+		int gd = DETECT, gm; 
+		initgraph(&gd, &gm, "C:\\TC\\BGI");  kod dizimini kullandık
+
+
+	 txt dosyasındaki veriyi okumak için aşşağıdaki kodu kullandık 
+
+		FILE *file;
+   	 	char filename[] = "input.txt);
+    		file = fopen(filename, "r");
+
+	ve eğer bir sıkınrtı oluşursa diye önlem olarak koşullu bir kod parçası kullandık
+
+	kullanıcıdan istenilen bilgileri istenilen formatta aldık. 
+
+	webde bulnunan verileri bir kural doğrultusunda matris kullanarak herbir satırı farklı bir boyuta atadık.
+atama işlemini yaparken Char ya da Integer olmasına göre ayırdık bir integer değeri bulmak için  char karakterlerini integer değerimizin başı ve sonu olarak kabul ettik.
+
+	dosya okuma işimiz bittiği için 'fclose(file);' ile  dosyayı kapattık
+
+	bir döngü yardımıyla kullanacağımız arkapladaki kareli alanı çizdirdik ve kullanıcıdan girilen değere göre yine bir döngüyle şekilleri çizdirdik.
+
+	Kordinatlar dizisinde bulunan her kordinatı for yardımıyla aldık ve bazı matematiksel hesaplamalar ile alanı bulduk.
+
+	formül = uzunluk * genişlik / 2
+
+
+	Yaptığımız denemeler sonucunda en iyi optime durumu tespit ettik ve arkaplandaki kareleri optimize bir şekilde tekrar çizdirdik
+
+	en başta alınan birim maliyetlere göre  toplam maliyet ve kar-zarar hesaplamalarını verilen kurallara
+
+		(toplamsondajmaliyeti = optimizasyon * sondajmaliyeti;
+    		toplamplatformsayisi = optimizasyon;
+    		toplamplatformmaliyeti = optimizasyon * platformmaliyeti;
+    		kar = rezerv - (toplamplatformmaliyeti +  toplamsondajmaliyeti);
+    		toplamsondajsayisi = optimizasyon;
+    		toplammaliyet = toplamplatformmaliyeti +  toplamsondajmaliyeti;) 
+
+göre optimizasyon kısmını da hesaba katarak hesapladık. ve ekrana yazdırdık
+
+
+
+4.Sonuç
+
+Sonuc olarak bu projeden web sitesinden veri çekmeyi deneyimlemiş olduk çektiğimiz verileri dosyaya kaydetmeyi ve kaydettiğimiz verileri kullanmayı öğrendik dosyadan çekilen verileri İnteger ya da char olarak ayırıp , matris olarak depolamayı ve istenilen şekilde graphics.h kütüphanesi kullanarak çizmeyi deneyimledik aldığımız verileri uygun bir şekilde işlem içinde kullanmayı öğrendik. 
+
+
+
+
+	
+
+	
+
+
+
+	
+
+
+
+
+
+
+
+
+
+

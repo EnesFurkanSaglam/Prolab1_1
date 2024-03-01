@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1697624087 source:c:\users\fsagl\onedrive\masaüstü\deneme\main.c
+	<stdio.h>
+	<ctype.h>
+	<stdlib.h>
+

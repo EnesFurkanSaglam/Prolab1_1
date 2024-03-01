@@ -1,0 +1,57 @@
+Bu belge, Kocaeli Üniversitesi bilgisayar mühendisliği bölümü proglamlama labaratuvarı dersi 1.proje ödevi için hazırlanmıştır. 
+
+Anahtar Kelimeler — doküman biçimi; stil; anahtar kelimeler. (*key words) 
+
+
+1.özet
+
+Bu projede c proglamlama dili kullanılarak verilen bilgilere göre web sitesinden veri çekilerek bir bölgedeki sondaj maliyeti karı zararı belli bir kural dizimine göre hesaplanarak kullanıcıya istendiği şekilde çıktı vermek için yapılmıştır.  
+
+
+2.giriş
+
+
+Bu proje, C proglamalama dilinde web'den veri çekme girilen kordinatlara göre grafik ve şekil çizme belli bir matematiksel hesaba göre şekilin veya şekillerin alanını bulmak herhabgş bir dosyadan veriyi alıp kullanmak belli bir örüntü kullanılarak arkaplan oluşturmak  verilen kurallara göre min maliyet max karar olacak şekilde şekli bölümlendirmek amacıyla yapılmıştır.
+
+
+
+3.Yöntem
+
+	ilk olarak curl kütüphanesi kullanarak cmd üzerinden txt dosyasına web sitesinde bulunan veriyi aktardık grafik arayüznün açılması belli bir kod dizimini kullandık txt dosyasındaki veriyi bir diziye atadık ve eğer bir sıkınrtı oluşursa diye önlem olarak koşullu bir kod parçası kullandık
+
+	kullanıcıdan istenilen bilgileri istenilen formatta aldık. 
+
+	webde bulnunan verileri bir kural doğrultusunda matris kullanarak herbir satırı farklı bir boyuta atadık.
+atama işlemini yaparken Char ya da Integer olmasına göre ayırdık bir integer değeri bulmak için  char karakterlerini integer değerimizin başı ve sonu olarak kabul ettik.
+
+	dosya okuma işimiz bittiği için dosyayı kapattık
+
+	bir döngü yardımıyla kullanacağımız arkapladaki kareli alanı çizdirdik ve kullanıcıdan girilen değere göre yine bir döngüyle şekilleri çizdirdik.
+
+	Kordinatlar dizisinde bulunan her kordinatı for yardımıyla aldık ve bazı matematiksel hesaplamalar ile alanı bulduk.
+
+	Bazı matematiksel hesaplamalar sonucunda optimizasyonu bulduk ve arkaplandaki kareleri optimize bir şekilde tekrar çizdirdik
+
+	en başta alınan birim maliyetlere göre  toplam maliyet ve kar-zarar hesaplamalarını verilen kurala göre optimizsyon kısmını da hesaba katarak hesapladık. ve ekrana yazdırdık
+
+
+
+4.Sonuç
+
+	
+
+	
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
